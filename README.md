@@ -1,8 +1,8 @@
 # Written by me
 
-. This challenge helped me realize a few things about layout and sizes, especially with responsive design (where I had to fix many things again and again)
+This challenge helped me realize a few things about layout and sizes, especially with responsive design (where I had to fix many things again and again)
 
-.I'm pretty sure I could have done better but I'm still proud of the results which started showing pretty fast afte I first started the project. Some issues came later with elements positions and so on. 
+I'm pretty sure I could have done better but I'm still proud of the results which started showing pretty fast afte I first started the project. Some issues came later with elements positions and so on. 
 
 # Frontend Mentor - Clipboard landing page
 
