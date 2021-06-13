@@ -1,0 +1,373 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-header-desktop.png);
+    background-position-y: start;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* Fonts */
+@font-face {
+    font-family: Bai Jamjuree;
+    src: url(../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+}
+body>* {
+    font-family: Bai Jamjuree;
+    font-size: 18px;
+}
+
+/* MAIN STYLE */
+/* HEADER STYLE */
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#title {
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.grey-p-h {
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    text-align: center;
+    max-width: 680px;
+    line-height: 1.5;
+}
+
+/* Button Style */
+.button-row {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 500px;
+    width: 50%;
+}
+
+.btn {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.bg-primary {
+    /* Strong Cyan */
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: hsla(171, 66%, 44%, 0.3) 0px 7px 29px 0px;
+}
+
+.bg-primary:hover {
+    background-color: hsla(171, 66%, 44%, 0.6);
+    transition: 500ms;
+}
+
+.bg-secondary {
+    /* Light Blue */
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: hsla(233, 100%, 69%, 0.3) 0px 7px 29px 0px;
+}
+
+.bg-secondary:hover {
+    background-color: hsla(233, 100%, 69%, 0.6);
+    transition: 500ms;
+}
+
+/* Section 1 Style */
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 900px;
+}
+
+.imac-container {
+    position: relative;
+    left: -30%;
+}
+
+.section-header {
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    font-size: 2em;
+    text-align: center;
+}
+
+.features-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.features-col {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position:relative;
+    left: -10%;
+}
+
+.feature {
+    max-width: 400px;
+}
+
+.feature-title {
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.grey-p-p {
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+
+/* Section 2 style */
+.section-2 {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* In the future I want to position elements more intuitively without relying on last minute fixes such as heights etc. These things require too many breakpoints for responsive design for me right now. */
+
+/* Section 3 Style */
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.tools-row {
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* height: 180px; */
+    /* justify-content: space-between; */
+    width: 350px;
+}
+
+.tool>*{
+    margin-bottom: 30px;
+}
+
+.tool-title {
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+.tool-img {
+    height: 40px;
+}
+
+/* Section 4 style */
+
+.section-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 70px 0;
+}
+
+/* Section 5 style */
+
+.section-5 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    margin-bottom: 80px;
+}
+
+/* Footer style */
+footer {
+    background-color:  hsl(200, 11.1%, 84.1%);
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    /* max-width: 1400px; */
+    align-items: center;
+    padding: 40px 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#footer-logo {
+    height: 100px;
+}
+
+.footer-links {
+    line-height: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+a.footer-link  {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    font-family: Bai Jamjuree;
+    font-size: 18px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Responsive */
+/* Added the next breakpoing to fix a few issues with the last sections */
+@media screen AND (max-width:800px){
+
+    .section-3,.section-4{
+        height: auto;
+    }
+    .section-3>*,.section-4{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-3>*,.section-4>*{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media  screen AND (max-width:570px) {
+    body {
+        background-image: url(../images/bg-header-mobile.png);
+        background-position-y: start;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    body>* {
+        max-width: 100%;
+    }
+
+    .main-header{
+        max-width: 100%;
+    }
+
+    /* .grey-p-h {
+        max-width: 95%;
+    } */
+
+    .section-1,.section-2,.section-3,.section-4,.section-5{
+        height: auto;
+    }
+    .button-row{
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100px;
+    }
+
+    .imac-container {
+        left: 0;
+    }
+
+    img#imac {
+        text-align: center;
+        max-width: 370px;
+    }
+
+    img#devices {
+        text-align: center;
+        max-width: 370px;
+    }
+
+    .features-row, .tools-row, .section-4 {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* this triggers s bug in the layout, might want to change a few things in heights and positions */
+    }
+    
+    .imac-container {
+        align-self: center;
+    }
+
+    .features-col {
+        position: static;
+        left: auto;
+        margin-left: 10px;
+    }
+
+    .partner{
+        margin-bottom: 30px;
+    }
+
+    /* Footer style */
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container>*{
+        margin-bottom: 30px;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
